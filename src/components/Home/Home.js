@@ -5,6 +5,8 @@ import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import Snackbar from '@material-ui/core/Snackbar';
 import GH_Logo from '../../images/GitHub-Mark-64px.png';
+import Avatar from '@material-ui/core/Avatar';
+import Headshot from '../../images/headshot.jpg';
 
 export default class Home extends Component {
 	constructor(props) {
@@ -27,19 +29,33 @@ export default class Home extends Component {
 	render() {
 		return (
 			<Box>
-				<h1>
-					Michael Small{' '}
-					<a href='https://github.com/michael-small' target='_blank'>
-						<img src={GH_Logo} alt='Github Profile' />
-					</a>
-				</h1>
-				<section>
-					<h2>About Me</h2>
+				<section id='bio'>
+					<h1>
+						Michael Small{' '}
+						<a
+							href='https://github.com/michael-small'
+							target='_blank'
+						>
+							<img src={GH_Logo} alt='Github Profile' />
+						</a>
+					</h1>
+
+					<Avatar
+						alt='Michael Small'
+						src={Headshot}
+						style={{
+							height: '200px',
+							width: '200px',
+							marginLeft: 'auto',
+							marginRight: 'auto',
+						}}
+					/>
 					<p>
 						I like making things. Looking for a full-time position
 						and/or projects.
 					</p>
 				</section>
+
 				<section>
 					<h2>Education</h2>
 					<div id='college'>
