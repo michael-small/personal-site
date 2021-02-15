@@ -59,7 +59,7 @@ export default class Home extends Component {
 				</section>
 				<Divider />
 				<section>
-					<h2>Education</h2>
+					<h2>Education 🎓</h2>
 					<div id='college'>
 						<b>College:</b>
 						<p> University of Minnesota, Morris</p>
@@ -79,7 +79,7 @@ export default class Home extends Component {
 				</section>
 				<Divider />
 				<section>
-					<h2>Projects</h2>
+					<h2>Projects 🚧</h2>
 					<div id='omg-str'>
 						<b>🏋️ Omega Strength 💪</b>
 						<p>
@@ -114,7 +114,7 @@ export default class Home extends Component {
 				</section>
 				<Divider />
 				<section>
-					<h2>Open for hire</h2>
+					<h2>Open for hire 💼</h2>
 					<p>
 						I would love to work in a town on par with or smaller
 						than Fargo/Moorhead or St.Cloud/Duluth. However, I am
@@ -125,7 +125,7 @@ export default class Home extends Component {
 				</section>
 				<Divider />
 				<section>
-					<h2>Languages/Concepts</h2>
+					<h2>Languages/Concepts 👨‍💻</h2>
 					<b>Frontend</b>
 					<ul>
 						<li>JavaScript/HTML/CSS</li>
@@ -148,8 +148,8 @@ export default class Home extends Component {
 					</ul>
 				</section>
 				<Divider />
-				<section>
-					<h2>Reviews</h2>
+				<section id='reviews'>
+					<h2>Reviews ⭐⭐⭐⭐⭐</h2>
 					<div style={{ marginBottom: '0.8rem' }}>
 						<i>"The markdown god!"</i>{' '}
 						<span>- Utkarsh and Nate, CSci friends</span>
