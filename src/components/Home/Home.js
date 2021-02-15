@@ -7,6 +7,7 @@ import Snackbar from '@material-ui/core/Snackbar';
 import GH_Logo from '../../images/GitHub-Mark-64px.png';
 import Avatar from '@material-ui/core/Avatar';
 import Headshot from '../../images/headshot.jpg';
+import Divider from '@material-ui/core/Divider';
 
 export default class Home extends Component {
 	constructor(props) {
@@ -35,6 +36,7 @@ export default class Home extends Component {
 						<a
 							href='https://github.com/michael-small'
 							target='_blank'
+							rel='noreferrer'
 						>
 							<img src={GH_Logo} alt='Github Profile' />
 						</a>
@@ -55,7 +57,7 @@ export default class Home extends Component {
 						and/or projects.
 					</p>
 				</section>
-
+				<Divider />
 				<section>
 					<h2>Education</h2>
 					<div id='college'>
@@ -75,6 +77,7 @@ export default class Home extends Component {
 						</p>
 					</div>
 				</section>
+				<Divider />
 				<section>
 					<h2>Projects</h2>
 					<div id='omg-str'>
@@ -82,7 +85,11 @@ export default class Home extends Component {
 						<p>
 							Friend's strength training web app. Ported from
 							Angular 2+ to React.{' '}
-							<a href='https://github.com/michael-small/strength-star'>
+							<a
+								href='https://github.com/michael-small/strength-star'
+								target='_blank'
+								rel='noreferrer'
+							>
 								Created sandbox
 							</a>{' '}
 							for testing ideas/stack, waiting for friend to
@@ -93,7 +100,11 @@ export default class Home extends Component {
 						<b>🤔 Witty 😁</b>
 						<p>
 							A React{' '}
-							<a href='https://github.com/michael-small/Witty'>
+							<a
+								href='https://github.com/michael-small/Witty'
+								target='_blank'
+								rel='noreferrer'
+							>
 								web app
 							</a>{' '}
 							dedicated to promoting online learning via video and
@@ -101,6 +112,7 @@ export default class Home extends Component {
 						</p>
 					</div>
 				</section>
+				<Divider />
 				<section>
 					<h2>Open for hire</h2>
 					<p>
@@ -111,6 +123,7 @@ export default class Home extends Component {
 					</p>
 					<p>Willing to relocate.</p>
 				</section>
+				<Divider />
 				<section>
 					<h2>Languages/Concepts</h2>
 					<b>Frontend</b>
@@ -134,6 +147,7 @@ export default class Home extends Component {
 						<li>Visual Studio Code/IntelliJ</li>
 					</ul>
 				</section>
+				<Divider />
 				<section>
 					<h2>Reviews</h2>
 					<div style={{ marginBottom: '0.8rem' }}>
@@ -144,7 +158,11 @@ export default class Home extends Component {
 						<i>"Sweet boy"</i>{' '}
 						<span>
 							- My mom, who I have made{' '}
-							<a href='https://garlickybohemianfarm.com/en'>
+							<a
+								href='https://garlickybohemianfarm.com/en'
+								target='_blank'
+								rel='noreferrer'
+							>
 								a site for
 							</a>{' '}
 							and who supported me through college
