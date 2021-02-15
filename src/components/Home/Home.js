@@ -4,7 +4,7 @@ import Box from '@material-ui/core/Box';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import Snackbar from '@material-ui/core/Snackbar';
-import { Button } from '@material-ui/core';
+import GH_Logo from '../../images/GitHub-Mark-64px.png';
 
 export default class Home extends Component {
 	constructor(props) {
@@ -27,7 +27,12 @@ export default class Home extends Component {
 	render() {
 		return (
 			<Box>
-				<h1>Michael Small</h1>
+				<h1>
+					Michael Small{' '}
+					<a href='https://github.com/michael-small' target='_blank'>
+						<img src={GH_Logo} alt='Github Profile' />
+					</a>
+				</h1>
 				<section>
 					<h2>About Me</h2>
 					<p>
