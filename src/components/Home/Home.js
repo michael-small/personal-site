@@ -32,7 +32,7 @@ export default class Home extends Component {
 			<Box>
 				<section id='bio'>
 					<h1>
-						Michael Small{' '}
+						Michael{' '}
 						<a
 							href='https://github.com/michael-small'
 							target='_blank'
@@ -40,6 +40,7 @@ export default class Home extends Component {
 						>
 							<img src={GH_Logo} alt='Github Profile' />
 						</a>
+						Small
 					</h1>
 
 					<Avatar
