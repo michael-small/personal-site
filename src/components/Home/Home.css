@@ -1,0 +1,27 @@
+h1, h2 {
+    text-align: center;
+}
+
+#college {
+    margin-bottom: 2rem;
+}
+
+#high-school {
+    margin-bottom: 2rem;;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+#fab {
+    top: auto;
+    left: auto;
+    margin: 0px;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+    opacity: 50%;
+};
