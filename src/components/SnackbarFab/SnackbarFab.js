@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import Snackbar from '@material-ui/core/Snackbar';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-import Snackbar from '@material-ui/core/Snackbar';
 
 export default class SnackbarFab extends Component {
 	constructor(props) {
@@ -13,12 +13,10 @@ export default class SnackbarFab extends Component {
 
 	handleClick = () => {
 		this.setState({ open: true });
-		console.log(this.state.open);
 	};
 
 	handleClose = (event) => {
 		this.setState({ open: false });
-		console.log(this.state.open);
 	};
 	render() {
 		return (
