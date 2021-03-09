@@ -1,12 +1,22 @@
 import React from 'react';
-import Aux from '../../hocs/Aux';
 
-// toggle button/forms
+// <----- MUI ----->
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+// MUI: toggle button/forms
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 
+const useStyles = makeStyles({
+	root: {
+		textAlign: 'center',
+	},
+});
+
 export default function ToggleCode() {
+	const classes = useStyles();
+
 	const [state, setState] = React.useState({
 		checked: false,
 	});
@@ -16,20 +26,21 @@ export default function ToggleCode() {
 	};
 
 	return (
-		<Aux>
+		<Container classes={{ root: classes.root }}>
 			<FormGroup row>
-				<FormControlLabel
-					control={
-						<Switch
-							checked={state.checked}
-							onChange={handleChange}
-							name='checked'
-						/>
-					}
-					label={state.checked ? 'Show Code' : "Don't Show Code"}
-				></FormControlLabel>
+				<Container>
+					<FormControlLabel
+						control={
+							<Switch
+								checked={state.checked}
+								onChange={handleChange}
+								name='checked'
+							/>
+						}
+						label={state.checked ? 'Show Code' : "Don't Show Code"}
+					></FormControlLabel>
+				</Container>
 			</FormGroup>
-			<h2>ToggleCode</h2>
-		</Aux>
+		</Container>
 	);
 }

@@ -1,17 +1,20 @@
-import React, { Component } from 'react';
-import '../../App.css';
+import React from 'react';
+
+// <----- Components ----->
 import Aux from '../hocs/Aux';
 import GraphQLDemo from './GraphQLDemo/GraphQLDemo';
 import ToggleCode from './ToggleCode/ToggleCode';
 
-export default class Showcase extends Component {
-	render() {
-		return (
-			<Aux className='App'>
-				<h1>Showcase</h1>
-				<ToggleCode />
-				<GraphQLDemo />
-			</Aux>
-		);
-	}
+// <----- Styling ----->
+import '../../App.css';
+import './Showcase.css';
+
+export default function Showcase() {
+	return (
+		<Aux className='App'>
+			<h1>Showcase</h1>
+			<ToggleCode />
+			<GraphQLDemo />
+		</Aux>
+	);
 }
