@@ -30,6 +30,10 @@ const GET_DEMO_UNITS_CODE = gql`
 			fileName
 			gitHubLink
 			multiline
+			compImg {
+				fileName
+				url
+			}
 		}
 	}
 `;
@@ -67,6 +71,16 @@ export default function GraphQLDemo(props) {
 						ghLink={dataDEMO.demoCode.gitHubLink}
 						multiline={dataDEMO.demoCode.multiline}
 					/>
+				)}
+				{props.showCode && (
+					<Aux>
+						{' '}
+						<h2>Component hierarchy</h2>
+						<img
+							src={dataDEMO.demoCode.compImg.url}
+							className='centerImg'
+						/>
+					</Aux>
 				)}
 			</Aux>
 		</Aux>
