@@ -29,9 +29,6 @@ const GET_DEMO_UNITS_CODE = gql`
 			title
 			fileName
 			gitHubLink
-			richText {
-				html
-			}
 			multiline
 		}
 	}

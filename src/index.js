@@ -9,6 +9,7 @@ const client = new ApolloClient({
 	uri:
 		'https://api-ca-central-1.graphcms.com/v2/cklfvpk3nbpos01z65yup5hsq/master',
 	cache: new InMemoryCache(),
+	connectToDevtools: true,
 });
 
 ReactDOM.render(
