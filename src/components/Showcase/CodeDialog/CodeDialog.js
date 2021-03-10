@@ -1,7 +1,6 @@
 import React from 'react';
 
 // <----- Misc functionality ----->
-import DOMPurify from 'dompurify';
 import PropTypes from 'prop-types';
 
 // <----- MUI ----->
@@ -11,6 +10,7 @@ import Dialog from '@material-ui/core/Dialog';
 
 // <----- Styling ----->
 import './CodeDialog.css';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 function SimpleDialog(props) {
 	const { onClose, selectedValue, open } = props;
@@ -18,8 +18,6 @@ function SimpleDialog(props) {
 	const handleClose = () => {
 		onClose(selectedValue);
 	};
-
-	const sanitizer = DOMPurify.sanitize;
 
 	return (
 		<Dialog
@@ -33,11 +31,16 @@ function SimpleDialog(props) {
 					<a href={props.ghLink}>{props.fileName}</a>
 				</div>
 			</DialogTitle>
-			<span
-				dangerouslySetInnerHTML={{
-					__html: sanitizer(props.codeRichText.html),
+			<SyntaxHighlighter
+				lineProps={{
+					style: {
+						wordBreak: 'break-all',
+					},
 				}}
-			></span>
+				language='jsx'
+			>
+				{props.multiline}
+			</SyntaxHighlighter>
 		</Dialog>
 	);
 }
@@ -73,7 +76,7 @@ export default function CodeDialog(props) {
 				codeTitle={props.codeTitle}
 				fileName={props.fileName}
 				ghLink={props.ghLink}
-				codeRichText={props.codeRichText}
+				multiline={props.multiline}
 			/>
 		</div>
 	);

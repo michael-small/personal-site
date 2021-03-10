@@ -9,7 +9,6 @@ import CodeDialog from '../CodeDialog/CodeDialog';
 
 // <----- Styling ----->
 import './GraphQLDemo.css';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 // <----- GQL/Apollo ----->
 import { gql, useQuery } from '@apollo/client';
@@ -63,21 +62,11 @@ export default function GraphQLDemo() {
 				</h2>
 				<p>{dataCMS.graphQLDemo.p1}</p>
 				<p>{dataCMS.graphQLDemo.p2}</p>
-				<SyntaxHighlighter
-					lineProps={{
-						style: {
-							wordBreak: 'break-all',
-						},
-					}}
-					language='jsx'
-				>
-					{dataDEMO.demoCode.multiline}
-				</SyntaxHighlighter>
 				<CodeDialog
 					codeTitle={dataDEMO.demoCode.title}
 					fileName={dataDEMO.demoCode.fileName}
 					ghLink={dataDEMO.demoCode.gitHubLink}
-					codeRichText={dataDEMO.demoCode.richText}
+					multiline={dataDEMO.demoCode.multiline}
 				/>
 			</Aux>
 		</Aux>
