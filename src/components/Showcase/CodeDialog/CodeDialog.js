@@ -72,7 +72,7 @@ export default function CodeDialog(props) {
 	};
 
 	return (
-		<div className='center'>
+		<div className='center' id='dialog'>
 			<Button
 				variant='outlined'
 				color='primary'

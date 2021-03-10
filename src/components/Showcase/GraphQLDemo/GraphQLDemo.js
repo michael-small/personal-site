@@ -64,14 +64,6 @@ export default function GraphQLDemo(props) {
 			<p>{dataCMS.graphQLDemo.p1}</p>
 			<p>{dataCMS.graphQLDemo.p2}</p>
 			{props.showCode && (
-				<CodeDialog
-					codeTitle={dataDEMO.demoCode.title}
-					fileName={dataDEMO.demoCode.fileName}
-					ghLink={dataDEMO.demoCode.gitHubLink}
-					multiline={dataDEMO.demoCode.multiline}
-				/>
-			)}
-			{props.showCode && (
 				<Aux>
 					{' '}
 					<h2>Component hierarchy</h2>
@@ -81,6 +73,14 @@ export default function GraphQLDemo(props) {
 						className='centerImg'
 					/>
 				</Aux>
+			)}
+			{props.showCode && (
+				<CodeDialog
+					codeTitle={dataDEMO.demoCode.title}
+					fileName={dataDEMO.demoCode.fileName}
+					ghLink={dataDEMO.demoCode.gitHubLink}
+					multiline={dataDEMO.demoCode.multiline}
+				/>
 			)}
 		</Aux>
 	);
