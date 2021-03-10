@@ -31,13 +31,17 @@ function SimpleDialog(props) {
 				<div>
 					<i>
 						{props.fileName}{' '}
-						<a href={props.ghLink}>
+						{/* TODO: Likely want to replace this `a` with `Link` from `react-router-dom` */}
+						<a href={props.ghLink} target='_blank'>
 							<GitHubIcon />
 						</a>
 					</i>
 				</div>
 			</DialogTitle>
 			<SyntaxHighlighter
+				// TODO: I am unsure if I want line wrapping. Unsure on both desktop and mobile. May just make dialog bigger on desktop...
+				//...Or I could be fancy and have a toggle for the user.
+				// wrapLongLines={true}
 				lineProps={{
 					style: {
 						wordBreak: 'break-all',
