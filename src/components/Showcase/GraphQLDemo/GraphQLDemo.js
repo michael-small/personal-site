@@ -34,7 +34,7 @@ const GET_DEMO_UNITS_CODE = gql`
 	}
 `;
 
-export default function GraphQLDemo() {
+export default function GraphQLDemo(props) {
 	const QueryGraphCMS = () => {
 		const Graph_CMS_Info = useQuery(GET_GRAPHQL_INFO);
 		const Demo_Code = useQuery(GET_DEMO_UNITS_CODE);
@@ -55,16 +55,19 @@ export default function GraphQLDemo() {
 			<Aux>
 				<h1>{dataDEMO.demoCode.title}</h1>
 				<h2 className='alignedWithIcon'>
-					{dataCMS.graphQLDemo.h2} <CodeIcon id='code-toggle' />
+					{dataCMS.graphQLDemo.h2}{' '}
+					{props.showCode && <CodeIcon id='code-toggle' />}
 				</h2>
 				<p>{dataCMS.graphQLDemo.p1}</p>
 				<p>{dataCMS.graphQLDemo.p2}</p>
-				<CodeDialog
-					codeTitle={dataDEMO.demoCode.title}
-					fileName={dataDEMO.demoCode.fileName}
-					ghLink={dataDEMO.demoCode.gitHubLink}
-					multiline={dataDEMO.demoCode.multiline}
-				/>
+				{props.showCode && (
+					<CodeDialog
+						codeTitle={dataDEMO.demoCode.title}
+						fileName={dataDEMO.demoCode.fileName}
+						ghLink={dataDEMO.demoCode.gitHubLink}
+						multiline={dataDEMO.demoCode.multiline}
+					/>
+				)}
 			</Aux>
 		</Aux>
 	);

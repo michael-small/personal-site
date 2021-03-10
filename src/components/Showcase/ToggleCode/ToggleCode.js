@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 	},
 });
 
-export default function ToggleCode() {
+export default function ToggleCode({ onClick }) {
 	const classes = useStyles();
 
 	const [state, setState] = React.useState({
@@ -30,6 +30,7 @@ export default function ToggleCode() {
 			<FormGroup row>
 				<Container>
 					<FormControlLabel
+						onClick={onClick}
 						control={
 							<Switch
 								checked={state.checked}
