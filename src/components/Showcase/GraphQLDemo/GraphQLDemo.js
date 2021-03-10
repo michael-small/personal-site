@@ -56,33 +56,31 @@ export default function GraphQLDemo(props) {
 
 	return (
 		<Aux>
-			<Aux>
-				<h1>{dataDEMO.demoCode.title}</h1>
-				<h2 className='alignedWithIcon'>
-					{dataCMS.graphQLDemo.h2}{' '}
-					{props.showCode && <CodeIcon id='code-toggle' />}
-				</h2>
-				<p>{dataCMS.graphQLDemo.p1}</p>
-				<p>{dataCMS.graphQLDemo.p2}</p>
-				{props.showCode && (
-					<CodeDialog
-						codeTitle={dataDEMO.demoCode.title}
-						fileName={dataDEMO.demoCode.fileName}
-						ghLink={dataDEMO.demoCode.gitHubLink}
-						multiline={dataDEMO.demoCode.multiline}
+			<h1>{dataDEMO.demoCode.title}</h1>
+			<h2 className='alignedWithIcon'>
+				{dataCMS.graphQLDemo.h2}{' '}
+				{props.showCode && <CodeIcon id='code-toggle' />}
+			</h2>
+			<p>{dataCMS.graphQLDemo.p1}</p>
+			<p>{dataCMS.graphQLDemo.p2}</p>
+			{props.showCode && (
+				<CodeDialog
+					codeTitle={dataDEMO.demoCode.title}
+					fileName={dataDEMO.demoCode.fileName}
+					ghLink={dataDEMO.demoCode.gitHubLink}
+					multiline={dataDEMO.demoCode.multiline}
+				/>
+			)}
+			{props.showCode && (
+				<Aux>
+					{' '}
+					<h2>Component hierarchy</h2>
+					<img
+						src={dataDEMO.demoCode.compImg.url}
+						className='centerImg'
 					/>
-				)}
-				{props.showCode && (
-					<Aux>
-						{' '}
-						<h2>Component hierarchy</h2>
-						<img
-							src={dataDEMO.demoCode.compImg.url}
-							className='centerImg'
-						/>
-					</Aux>
-				)}
-			</Aux>
+				</Aux>
+			)}
 		</Aux>
 	);
 }
