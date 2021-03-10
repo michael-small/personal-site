@@ -77,6 +77,7 @@ export default function GraphQLDemo(props) {
 					<h2>Component hierarchy</h2>
 					<img
 						src={dataDEMO.demoCode.compImg.url}
+						alt='Hierarchy of this page and GraphQL demo'
 						className='centerImg'
 					/>
 				</Aux>

@@ -32,7 +32,7 @@ function SimpleDialog(props) {
 					<i>
 						{props.fileName}{' '}
 						{/* TODO: Likely want to replace this `a` with `Link` from `react-router-dom` */}
-						<a href={props.ghLink} target='_blank'>
+						<a href={props.ghLink} target='_blank' rel='noreferrer'>
 							<GitHubIcon />
 						</a>
 					</i>
