@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 // <----- Styling ----->
 import './CodeDialog.css';
@@ -28,7 +29,12 @@ function SimpleDialog(props) {
 			<h1>{props.codeTitle}</h1>
 			<DialogTitle id='simple-dialog-title'>
 				<div>
-					<a href={props.ghLink}>{props.fileName}</a>
+					<i>
+						{props.fileName}{' '}
+						<a href={props.ghLink}>
+							<GitHubIcon />
+						</a>
+					</i>
 				</div>
 			</DialogTitle>
 			<SyntaxHighlighter
