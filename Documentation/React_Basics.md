@@ -42,4 +42,8 @@ return (
 );
 ```
 
+* If you are getting errors when you think changes you have made are legitimate syntax, try reloading the client. This is especially true if an import is added. React out of the box doesn't take changes in imports that well.
+
 * Component names in CamelCase
+
+* Folder nesting probably should not exceed 3 or 4 levels
