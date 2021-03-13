@@ -30,10 +30,10 @@ export default function ToggleCode({ onClick }) {
 			<FormGroup row>
 				<Container>
 					<FormControlLabel
-						onClick={onClick}
 						control={
 							<Switch
 								checked={state.checked}
+								onClick={onClick}
 								onChange={handleChange}
 								name='checked'
 							/>
