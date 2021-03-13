@@ -20,7 +20,9 @@ export default class Showcase extends Component {
 	toggleCode = () => {
 		let showCode = this.state.showCode;
 		this.setState({ showCode: !showCode }, () => {
-			console.log(this.state.showCode);
+			// `setState` is async, and I'm keeping this in
+			//as a reminder of how to run things in sync
+			// console.log(this.state.showCode);
 		});
 	};
 
