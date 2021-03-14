@@ -77,6 +77,7 @@ export default function CodeDialog(props) {
 				variant='outlined'
 				color='primary'
 				onClick={handleClickOpen}
+				style={{ marginBottom: '1rem' }}
 			>
 				View Code
 			</Button>
