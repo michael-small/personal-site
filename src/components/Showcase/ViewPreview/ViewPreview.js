@@ -21,6 +21,7 @@ export default function ViewShowcase(props) {
 						color='primary'
 						size='medium'
 						href={props.link}
+						disabled={props.role === 'Recruiter' ? false : true}
 					>
 						View as {props.role}
 						{props.role === 'Recruiter' ? (

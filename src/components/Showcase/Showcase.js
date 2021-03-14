@@ -36,7 +36,7 @@ export default class Showcase extends Component {
 					role='Recruiter'
 					description='A streamlined overview of some features I want to showcase. If you have hands-on coding experience, consider checking out the developer view.'
 					codeBackgroundReq='No hands-on programming experience required.'
-					link='/Showcase'
+					link='/showcase/recruiter'
 				/>
 				<ViewPreview
 					role='Developer'
