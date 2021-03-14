@@ -8,7 +8,7 @@ import ToggleCode from './ToggleCode/ToggleCode';
 // <----- Styling ----->
 import '../../App.css';
 import './Showcase.css';
-import ViewShowcase from './ViewPreview/ViewPreview';
+import ViewPreview from './ViewPreview/ViewPreview';
 
 export default class Showcase extends Component {
 	constructor(props) {
@@ -31,27 +31,27 @@ export default class Showcase extends Component {
 		return (
 			<Aux className='App'>
 				<h1>Showcase</h1>
-				<ToggleCode onClick={this.toggleCode} />
+				{/* <ToggleCode onClick={this.toggleCode} /> */}
 				<hr />
-				<ViewShowcase
+				<ViewPreview
 					role='Recruiter'
 					description='A streamlined overview of some features I want to showcase. If you have hands-on coding experience, consider checking out the developer view.'
 					codeBackgroundReq='No hands-on programming experience required.'
 					link='/Showcase'
 				/>
-				<ViewShowcase
+				<ViewPreview
 					role='Developer'
 					description='An in depth walkthrough of features and accompanying explanation of code. Recruiters with hands-on coding experience may want to check this out.'
 					codeBackgroundReq='Web development with knowledge of React is preferable.'
 					link='/Showcase'
 				/>
-				<ViewShowcase
+				<ViewPreview
 					role='Friends and Family'
 					description='The simplest overview of the demos. My grandma should be able to understand these demos <3'
 					codeBackgroundReq='No coding background required.'
 					link='/Showcase'
 				/>
-				<GraphQLDemo showCode={this.state.showCode} />
+				{/* <GraphQLDemo showCode={this.state.showCode} /> */}
 			</Aux>
 		);
 	}
