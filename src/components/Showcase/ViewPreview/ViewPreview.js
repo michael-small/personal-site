@@ -10,16 +10,14 @@ export default function ViewShowcase(props) {
 	return (
 		<Aux>
 			<div id='body'>
-				<h1 className='view-title'>ROLE View</h1>
+				<h1 className='view-title'>{props.role} View</h1>
 				<div className='center'>
 					<Button variant='outlined' color='primary'>
-						View as ROLE
+						View as {props.role}
 					</Button>
 				</div>
-				<p>
-					A ROLE BASED QUALIFIER of some features I want to showcase.
-				</p>
-				<p>EXPERIENCE NEEDED SNIPPET</p>
+				<p>{props.description}</p>
+				<p>{props.codeBackgroundReq}</p>
 			</div>
 		</Aux>
 	);
