@@ -32,7 +32,11 @@ export default class Showcase extends Component {
 			<Aux className='App'>
 				<h1>Showcase</h1>
 				<ToggleCode onClick={this.toggleCode} />
-				<ViewShowcase />
+				<ViewShowcase
+					role='Recruiter'
+					description='A streamlined overview of some features I want to showcase.'
+					codeBackgroundReq='No hands-on programming experience required.'
+				/>
 				<GraphQLDemo showCode={this.state.showCode} />
 			</Aux>
 		);
