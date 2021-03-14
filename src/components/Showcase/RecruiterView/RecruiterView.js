@@ -2,6 +2,9 @@ import React from 'react';
 import Aux from '../../hocs/Aux';
 import GraphQLDemo from '../GraphQLDemo/GraphQLDemo';
 import ToggleCode from '../ToggleCode/ToggleCode';
+import CodeIcon from '@material-ui/icons/Code';
+import './RecruiterView.css';
+import { ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 
 export default function RecruiterView(props) {
 	const [showCode, setCodeShowing] = React.useState(false);
@@ -12,7 +15,9 @@ export default function RecruiterView(props) {
 
 	return (
 		<Aux>
-			<h1>Recruiter View</h1>
+			{' '}
+			<h1>Demos for Recruiters</h1>
+			{/* TODO: This will still newline on small enough screens. MUI Icons are unduely awful to inline */}
 			<ToggleCode onClick={toggleCode} />
 			<GraphQLDemo showCode={showCode} />
 		</Aux>

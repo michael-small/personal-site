@@ -56,11 +56,11 @@ export default function GraphQLDemo(props) {
 
 	return (
 		<Aux>
-			<h1>{dataDEMO.demoCode.title}</h1>
-			<h2 className='alignedWithIcon'>
+			<h2>{dataDEMO.demoCode.title}</h2>
+			<h3 className='alignedWithIcon'>
 				{dataCMS.graphQLDemo.h2}{' '}
 				{/* {props.showCode && <CodeIcon id='code-toggle' />} */}
-			</h2>
+			</h3>
 			<p>{dataCMS.graphQLDemo.p1}</p>
 			<p>{dataCMS.graphQLDemo.p2}</p>
 			{props.showCode && (
