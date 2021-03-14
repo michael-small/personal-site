@@ -11,13 +11,15 @@ export default function ViewShowcase(props) {
 		<Aux>
 			<div id='body'>
 				<h1 className='view-title'>{props.role} View</h1>
+
+				<p>{props.description}</p>
+				<p>{props.codeBackgroundReq}</p>
 				<div className='center'>
 					<Button variant='outlined' color='primary'>
 						View as {props.role}
 					</Button>
 				</div>
-				<p>{props.description}</p>
-				<p>{props.codeBackgroundReq}</p>
+				<hr />
 			</div>
 		</Aux>
 	);
