@@ -8,6 +8,7 @@ import ToggleCode from './ToggleCode/ToggleCode';
 // <----- Styling ----->
 import '../../App.css';
 import './Showcase.css';
+import ViewShowcase from './ViewPreview/ViewPreview';
 
 export default class Showcase extends Component {
 	constructor(props) {
@@ -31,6 +32,7 @@ export default class Showcase extends Component {
 			<Aux className='App'>
 				<h1>Showcase</h1>
 				<ToggleCode onClick={this.toggleCode} />
+				<ViewShowcase />
 				<GraphQLDemo showCode={this.state.showCode} />
 			</Aux>
 		);
