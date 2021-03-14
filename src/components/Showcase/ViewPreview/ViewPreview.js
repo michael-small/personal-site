@@ -19,7 +19,7 @@ export default function ViewShowcase(props) {
 					<Button
 						variant='outlined'
 						color='primary'
-						size='large'
+						size='medium'
 						href={props.link}
 					>
 						View as {props.role}
@@ -35,9 +35,13 @@ export default function ViewShowcase(props) {
 					</Button>
 				</div>
 				<p>
-					{props.description} {props.codeBackgroundReq}
+					<b>Audience: </b>
+					{props.description}
 				</p>
-				<hr />
+				<p>
+					<b>Code Background: </b>
+					{props.codeBackgroundReq}
+				</p>
 			</div>
 		</Aux>
 	);

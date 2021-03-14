@@ -1,5 +1,9 @@
 #body {
     margin-bottom: 0.5rem;
+    border: 2px solid #d4d4b6;
+    background-color: #e6e6bc;
+    border-radius: 5%;
+    padding: 2px;
 }
 
 .view-title {

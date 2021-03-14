@@ -32,7 +32,6 @@ export default class Showcase extends Component {
 			<Aux className='App'>
 				<h1>Showcase</h1>
 				{/* <ToggleCode onClick={this.toggleCode} /> */}
-				<hr />
 				<ViewPreview
 					role='Recruiter'
 					description='A streamlined overview of some features I want to showcase. If you have hands-on coding experience, consider checking out the developer view.'
@@ -42,12 +41,12 @@ export default class Showcase extends Component {
 				<ViewPreview
 					role='Developer'
 					description='An in depth walkthrough of features and accompanying explanation of code. Recruiters with hands-on coding experience may want to check this out.'
-					codeBackgroundReq='Web development with knowledge of React is preferable.'
+					codeBackgroundReq='Web development. Knowledge of React is preferable.'
 					link='/Showcase'
 				/>
 				<ViewPreview
 					role='Friends and Family'
-					description='The simplest overview of the demos. My grandma should be able to understand these demos <3'
+					description='The simplest overview of the demos. My grandma should be able to understand them <3'
 					codeBackgroundReq='No coding background required.'
 					link='/Showcase'
 				/>
