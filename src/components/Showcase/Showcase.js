@@ -34,8 +34,13 @@ export default class Showcase extends Component {
 				<ToggleCode onClick={this.toggleCode} />
 				<ViewShowcase
 					role='Recruiter'
-					description='A streamlined overview of some features I want to showcase.'
+					description='A streamlined overview of some features I want to showcase. If you have hands-on coding experience, consider checking out the developer view.'
 					codeBackgroundReq='No hands-on programming experience required.'
+				/>
+				<ViewShowcase
+					role='Developer'
+					description='An in depth walkthrough of features and accompanying explanation of code. Recruiters with hands-on coding experience may want to check this out.'
+					codeBackgroundReq='Web development with knowledge of React is preferable.'
 				/>
 				<GraphQLDemo showCode={this.state.showCode} />
 			</Aux>
