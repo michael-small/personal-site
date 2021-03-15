@@ -18,7 +18,8 @@ const GET_GRAPHQL_INFO = gql`
 		graphQLDemo(where: { id: "cklfvvn401htq0a26zq1k7lmr" }) {
 			h2
 			p1
-			p2
+			pRecruiter
+			pDeveloper
 		}
 	}
 `;
@@ -31,6 +32,14 @@ const GET_DEMO_UNITS_CODE = gql`
 			gitHubLink
 			multiline
 			compImg {
+				fileName
+				url
+			}
+			devView {
+				fileName
+				url
+			}
+			editorView {
 				fileName
 				url
 			}
@@ -55,14 +64,31 @@ export default function GraphQLDemo(props) {
 		return `Error! ${errorCMS.message || errorDEMO.message}`;
 
 	return (
-		<Aux>
+		<Aux style={{ marginBottom: '1rem' }}>
 			<h2>{dataDEMO.demoCode.title}</h2>
 			<h3 className='alignedWithIcon'>
 				{dataCMS.graphQLDemo.h2}{' '}
 				{/* {props.showCode && <CodeIcon id='code-toggle' />} */}
 			</h3>
 			<p>{dataCMS.graphQLDemo.p1}</p>
-			<p>{dataCMS.graphQLDemo.p2}</p>
+			{props.showCode === false ? (
+				<p>{dataCMS.graphQLDemo.pRecruiter}</p>
+			) : (
+				<p>{dataCMS.graphQLDemo.pDeveloper}</p>
+			)}
+
+			<h3 className='center'>No code view (Editor)</h3>
+			<img
+				src={dataDEMO.demoCode.editorView.url}
+				alt='View that GraphCMS users without code experience (editors) see'
+				className='centerImg cmsView'
+			/>
+			<h3 className='center'>Code View (Developer)</h3>
+			<img
+				src={dataDEMO.demoCode.devView.url}
+				alt='View that GraphCMS users with code experience (developers) see'
+				className='centerImg cmsView'
+			/>
 			{props.showCode && (
 				<Aux>
 					{' '}
