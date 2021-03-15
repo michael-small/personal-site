@@ -10,3 +10,12 @@
     max-width: 100%;
     display: block;
 }
+
+.centeredText {
+    text-align: center;
+}
+
+.cmsView {
+    width: 500px;
+    padding-bottom: 1rem;
+}
