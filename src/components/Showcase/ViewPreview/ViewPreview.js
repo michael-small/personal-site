@@ -26,7 +26,7 @@ export default function ViewShowcase(props) {
 
 	return (
 		<Aux>
-			<div id='body'>
+			<div className='preview'>
 				<div className='center'>
 					<Tooltip
 						open={open}
