@@ -7,7 +7,7 @@ import ToggleCode from './ToggleCode/ToggleCode';
 
 // <----- Styling ----->
 import '../../App.scss';
-import './Showcase.css';
+import './Showcase.scss';
 import ViewPreview from './ViewPreview/ViewPreview';
 
 export default class Showcase extends Component {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Aux from '../../hocs/Aux';
-import './ViewShowcase.css';
+import './ViewShowcase.scss';
 
 // <----- MUI ----->
 import Button from '@material-ui/core/Button';

@@ -8,7 +8,7 @@ import CodeIcon from '@material-ui/icons/Code';
 import CodeDialog from '../CodeDialog/CodeDialog';
 
 // <----- Styling ----->
-import './GraphQLDemo.css';
+import './GraphQLDemo.scss';
 
 // <----- GQL/Apollo ----->
 import { gql, useQuery } from '@apollo/client';

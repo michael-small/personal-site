@@ -3,7 +3,7 @@ import Aux from '../../hocs/Aux';
 import GraphQLDemo from '../GraphQLDemo/GraphQLDemo';
 import ToggleCode from '../ToggleCode/ToggleCode';
 import CodeIcon from '@material-ui/icons/Code';
-import './RecruiterView.css';
+import './RecruiterView.scss';
 import { ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 
 export default function RecruiterView(props) {
