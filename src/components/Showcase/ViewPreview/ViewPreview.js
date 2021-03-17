@@ -2,6 +2,7 @@ import React from 'react';
 
 import Aux from '../../hocs/Aux';
 import './ViewShowcase.scss';
+import '../../UI/_theme.scss';
 
 // <----- MUI ----->
 import Button from '@material-ui/core/Button';

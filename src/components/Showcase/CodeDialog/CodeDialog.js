@@ -11,6 +11,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 // <----- Styling ----->
 import './CodeDialog.scss';
+import '../../UI/_theme.scss';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 function SimpleDialog(props) {
