@@ -6,7 +6,7 @@ import GraphQLDemo from './GraphQLDemo/GraphQLDemo';
 import ToggleCode from './ToggleCode/ToggleCode';
 
 // <----- Styling ----->
-import '../../App.css';
+import '../../App.scss';
 import './Showcase.css';
 import ViewPreview from './ViewPreview/ViewPreview';
 

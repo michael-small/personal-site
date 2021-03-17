@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Home from './components/Home/Home';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Showcase from './components/Showcase/Showcase';
