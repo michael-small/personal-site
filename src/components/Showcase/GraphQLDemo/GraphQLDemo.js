@@ -66,7 +66,7 @@ export default function GraphQLDemo(props) {
 	return (
 		<Aux style={{ marginBottom: '1rem' }}>
 			<h2>{dataDEMO.demoCode.title}</h2>
-			<h3 className='alignedWithIcon'>
+			<h3 className='aligned-with-icon'>
 				{dataCMS.graphQLDemo.h2}{' '}
 				{/* {props.showCode && <CodeIcon id='code-toggle' />} */}
 			</h3>
@@ -81,13 +81,13 @@ export default function GraphQLDemo(props) {
 			<img
 				src={dataDEMO.demoCode.editorView.url}
 				alt='View that GraphCMS users without code experience (editors) see'
-				className='centerImg cmsView'
+				className='center-img cms-view'
 			/>
 			<h3 className='center'>Code View (Developer)</h3>
 			<img
 				src={dataDEMO.demoCode.devView.url}
 				alt='View that GraphCMS users with code experience (developers) see'
-				className='centerImg cmsView'
+				className='center-img cms-view'
 			/>
 			{props.showCode && (
 				<Aux>
@@ -96,7 +96,7 @@ export default function GraphQLDemo(props) {
 					<img
 						src={dataDEMO.demoCode.compImg.url}
 						alt='Hierarchy of this page and GraphQL demo'
-						className='centerImg'
+						className='center-img'
 					/>
 				</Aux>
 			)}

@@ -6,7 +6,7 @@ import RecruiterView from './components/Showcase/RecruiterView/RecruiterView';
 
 function App() {
 	return (
-		<div className='App'>
+		<div className='app'>
 			<BrowserRouter>
 				<Route exact path='/' component={Home} />
 				<Route exact path='/showcase' component={Showcase} />
