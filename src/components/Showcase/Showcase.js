@@ -6,7 +6,6 @@ import GraphQLDemo from './GraphQLDemo/GraphQLDemo';
 import ToggleCode from './ToggleCode/ToggleCode';
 
 // <----- Styling ----->
-import '../../App.scss';
 import './Showcase.scss';
 import ViewPreview from './ViewPreview/ViewPreview';
 
@@ -29,7 +28,7 @@ export default class Showcase extends Component {
 
 	render() {
 		return (
-			<Aux className='App'>
+			<Aux>
 				<h1>Showcase</h1>
 				<h3>Developer and Friends/Family Section coming soon</h3>
 				<ViewPreview
