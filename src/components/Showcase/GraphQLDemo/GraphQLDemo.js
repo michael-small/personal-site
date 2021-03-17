@@ -64,7 +64,7 @@ export default function GraphQLDemo(props) {
 		return `Error! ${errorCMS.message || errorDEMO.message}`;
 
 	return (
-		<Aux style={{ marginBottom: '1rem' }}>
+		<Aux>
 			<h2>{dataDEMO.demoCode.title}</h2>
 			<h3 className='aligned-with-icon'>
 				{dataCMS.graphQLDemo.h2}{' '}

@@ -31,10 +31,7 @@ export default class Showcase extends Component {
 		return (
 			<Aux className='App'>
 				<h1>Showcase</h1>
-				{/* <ToggleCode onClick={this.toggleCode} /> */}
-				<h3 style={{ textAlign: 'center' }}>
-					Developer and Friends/Family Section coming soon
-				</h3>
+				<h3>Developer and Friends/Family Section coming soon</h3>
 				<ViewPreview
 					role='Recruiter'
 					description='A streamlined overview of some features I want to showcase. If you have hands-on coding experience, consider checking out the developer view.'

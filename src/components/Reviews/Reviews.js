@@ -5,7 +5,7 @@ export default class Reviews extends Component {
 		return (
 			<section id='reviews'>
 				<h2>Reviews ⭐⭐⭐⭐⭐</h2>
-				<div style={{ marginBottom: '0.8rem' }}>
+				<div>
 					<i>"The markdown god!"</i>{' '}
 					<span>- Utkarsh and Nate, CSci friends</span>
 				</div>

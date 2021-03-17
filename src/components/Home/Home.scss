@@ -1,42 +1,45 @@
-h1, h2 {
-    text-align: center;
+h1,
+h2 {
+	text-align: center;
+}
+
+#college,
+#high-school,
+#bio {
+	margin-bottom: 2rem;
 }
 
 #college {
-    margin-bottom: 2rem;
 }
 
 #high-school {
-    margin-bottom: 2rem;;
-}
-
-section {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-}
-
-#fab {
-    top: auto;
-    left: auto;
-    margin: 0px;
-    right: 10px;
-    bottom: 10px;
-    position: fixed;
-    opacity: 50%;
-};
-
-.avatar {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-#bio {
-    text-align: center;
-    margin-bottom: 2rem;
 }
 
 #reviews {
-    margin-bottom: 3rem;
+}
+
+section {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+#fab {
+	top: auto;
+	left: auto;
+	margin: 0px;
+	right: 10px;
+	bottom: 10px;
+	position: fixed;
+	opacity: 50%;
+}
+
+.avatar {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#bio {
+	text-align: center;
 }
