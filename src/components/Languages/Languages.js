@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Languages extends Component {
 	render() {
 		return (
-			<section>
+			<section id='languages'>
 				<h2>Languages/Concepts 👨‍💻</h2>
 				<b>Frontend</b>
 				<ul>
