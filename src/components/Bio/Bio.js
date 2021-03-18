@@ -20,16 +20,7 @@ export default class Bio extends Component {
 					Small
 				</h1>
 
-				<Avatar
-					alt='Michael Small'
-					src={Headshot}
-					style={{
-						height: '200px',
-						width: '200px',
-						marginLeft: 'auto',
-						marginRight: 'auto',
-					}}
-				/>
+				<Avatar alt='Michael Small' src={Headshot} id='avatar' />
 				<p>
 					I like making things. Looking for a full-time position
 					and/or projects.{' '}

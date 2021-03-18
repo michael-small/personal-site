@@ -6,8 +6,7 @@ import GraphQLDemo from './GraphQLDemo/GraphQLDemo';
 import ToggleCode from './ToggleCode/ToggleCode';
 
 // <----- Styling ----->
-import '../../App.css';
-import './Showcase.css';
+import './Showcase.scss';
 import ViewPreview from './ViewPreview/ViewPreview';
 
 export default class Showcase extends Component {
@@ -29,12 +28,9 @@ export default class Showcase extends Component {
 
 	render() {
 		return (
-			<Aux className='App'>
+			<Aux>
 				<h1>Showcase</h1>
-				{/* <ToggleCode onClick={this.toggleCode} /> */}
-				<h3 style={{ textAlign: 'center' }}>
-					Developer and Friends/Family Section coming soon
-				</h3>
+				<h3>Developer and Friends/Family Section coming soon</h3>
 				<ViewPreview
 					role='Recruiter'
 					description='A streamlined overview of some features I want to showcase. If you have hands-on coding experience, consider checking out the developer view.'

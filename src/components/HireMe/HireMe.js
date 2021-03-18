@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class HireMe extends Component {
 	render() {
 		return (
-			<section>
+			<section id='hire-me'>
 				<h2>Open for hire 💼</h2>
 				<p>
 					I would love to work in a town on par with or smaller than

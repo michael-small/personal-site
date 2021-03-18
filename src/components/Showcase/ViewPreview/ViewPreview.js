@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Aux from '../../hocs/Aux';
-import './ViewShowcase.css';
+import './ViewShowcase.scss';
+import '../../UI/_theme.scss';
 
 // <----- MUI ----->
 import Button from '@material-ui/core/Button';
@@ -25,7 +26,7 @@ export default function ViewShowcase(props) {
 
 	return (
 		<Aux>
-			<div id='body'>
+			<div className='preview'>
 				<div className='center'>
 					<Tooltip
 						open={open}

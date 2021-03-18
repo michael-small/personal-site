@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './Home.scss';
 
 //MUI components
 import Box from '@material-ui/core/Box';

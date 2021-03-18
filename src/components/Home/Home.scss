@@ -1,0 +1,47 @@
+h1,
+h2 {
+	text-align: center;
+}
+
+// Ids of home page components in order. I believe that as long as one type of id is used in a
+//similar group of ids, that each id selector should be included in a CSS file
+#bio {
+	text-align: center;
+}
+
+#education,
+#college,
+#high-school,
+#projects,
+#hire-me,
+#languages,
+#reviews {
+}
+
+#college,
+#high-school {
+	margin-bottom: 2rem;
+}
+
+section {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+#fab {
+	top: auto;
+	left: auto;
+	margin: 0px;
+	right: 10px;
+	bottom: 10px;
+	position: fixed;
+	opacity: 50%;
+}
+
+#avatar {
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+	width: 200px;
+}

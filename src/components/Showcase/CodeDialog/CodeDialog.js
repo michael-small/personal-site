@@ -10,7 +10,8 @@ import Dialog from '@material-ui/core/Dialog';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 // <----- Styling ----->
-import './CodeDialog.css';
+import './CodeDialog.scss';
+import '../../UI/_theme.scss';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 function SimpleDialog(props) {
@@ -77,7 +78,6 @@ export default function CodeDialog(props) {
 				variant='outlined'
 				color='primary'
 				onClick={handleClickOpen}
-				style={{ marginBottom: '1rem' }}
 			>
 				View Code
 			</Button>
