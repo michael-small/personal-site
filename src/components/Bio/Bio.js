@@ -24,13 +24,10 @@ export default class Bio extends Component {
 				<p>
 					I like making things. Looking for a full-time position
 					and/or projects.{' '}
-					<p>
-						{' '}
-						<Link to='/showcase'>
-							Check out a demo of some of my work, with
-							information tailored to recruiters and developers.
-						</Link>
-					</p>
+					<Link to='/showcase'>
+						Check out a demo of some of my work, with information
+						tailored to recruiters and developers.
+					</Link>
 				</p>
 			</section>
 		);
