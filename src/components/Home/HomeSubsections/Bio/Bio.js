@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import GH_Logo from '../../images/GitHub-Mark-64px.png';
+import GH_Logo from '../../../../images/GitHub-Mark-64px.png';
 import Avatar from '@material-ui/core/Avatar';
-import Headshot from '../../images/headshot.jpg';
+import Headshot from '../../../../images/headshot.jpg';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import './Bio.scss';
