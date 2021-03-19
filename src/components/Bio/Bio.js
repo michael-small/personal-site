@@ -3,6 +3,8 @@ import GH_Logo from '../../images/GitHub-Mark-64px.png';
 import Avatar from '@material-ui/core/Avatar';
 import Headshot from '../../images/headshot.jpg';
 import { Link } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
+import './Bio.scss';
 
 export default class Bio extends Component {
 	render() {
@@ -21,14 +23,19 @@ export default class Bio extends Component {
 				</h1>
 
 				<Avatar alt='Michael Small' src={Headshot} id='avatar' />
-				<p>
-					I like making things. Looking for a full-time position
-					and/or projects.{' '}
-					<Link to='/showcase'>
-						Check out a demo of some of my work, with information
-						tailored to recruiters and developers.
-					</Link>
-				</p>
+				<h3>
+					Check out a demo of some of my work, with information
+					tailored to recruiters and developers.
+				</h3>
+				<Button
+					variant='outlined'
+					color='primary'
+					size='large'
+					href='/showcase'
+					id='showcase-link'
+				>
+					SHOWCASE
+				</Button>
 			</section>
 		);
 	}
