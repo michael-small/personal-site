@@ -6,12 +6,12 @@ import Box from '@material-ui/core/Box';
 import Divider from '@material-ui/core/Divider';
 
 // Project's page components
-import Bio from '../Bio/Bio';
-import Education from '../Education/Education';
-import Projects from '../Projects/Projects';
-import HireMe from '../HireMe/HireMe';
-import Languages from '../Languages/Languages';
-import Reviews from '../Reviews/Reviews';
+import Bio from './HomeSubsections/Bio/Bio';
+import Education from './HomeSubsections/Education/Education';
+import Projects from './HomeSubsections/Projects/Projects';
+import HireMe from './HomeSubsections/HireMe/HireMe';
+import Languages from './HomeSubsections/Languages/Languages';
+import Reviews from './HomeSubsections/Reviews/Reviews';
 import SnackbarFab from '../SnackbarFab/SnackbarFab';
 
 export default class Home extends Component {
