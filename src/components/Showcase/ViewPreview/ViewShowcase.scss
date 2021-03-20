@@ -1,7 +1,9 @@
+@use '../../UI/theme' as theme;
+
 .preview {
 	margin-bottom: 0.5rem;
-	border: 2px solid #d4d4b6;
-	background-color: #e6e6bc;
+	border: 2px solid theme.$theme-darker;
+	background-color: lighten(theme.$theme-complementary, 3%);
 	border-radius: 10px;
 	padding: 2px;
 }
