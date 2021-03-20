@@ -4,7 +4,6 @@ import React from 'react';
 import Aux from '../../hocs/Aux';
 
 // <----- MUI ----->
-import CodeIcon from '@material-ui/icons/Code';
 import CodeDialog from '../CodeDialog/CodeDialog';
 
 // <----- Styling ----->

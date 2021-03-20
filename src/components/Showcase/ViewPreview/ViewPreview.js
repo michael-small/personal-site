@@ -6,7 +6,6 @@ import '../../UI/_theme.scss';
 
 // <----- MUI ----->
 import Button from '@material-ui/core/Button';
-import { Link } from 'react-router-dom';
 import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
 import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
 import PeopleOutlineIcon from '@material-ui/icons/PeopleOutline';

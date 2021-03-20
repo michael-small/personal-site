@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 // <----- Components ----->
 import Aux from '../hocs/Aux';
-import GraphQLDemo from './GraphQLDemo/GraphQLDemo';
-import ToggleCode from './ToggleCode/ToggleCode';
 
 // <----- Styling ----->
 import './Showcase.scss';
