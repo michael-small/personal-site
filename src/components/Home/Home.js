@@ -12,7 +12,7 @@ import Projects from './HomeSubsections/Projects/Projects';
 import HireMe from './HomeSubsections/HireMe/HireMe';
 import Languages from './HomeSubsections/Languages/Languages';
 import Reviews from './HomeSubsections/Reviews/Reviews';
-import SnackbarFab from '../SnackbarFab/SnackbarFab';
+import SnackbarFab from '../UI/SnackbarFab/SnackbarFab';
 
 export default class Home extends Component {
 	render() {
