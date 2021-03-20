@@ -1,5 +1,10 @@
-$theme-color: #f0f0c9;
+// Theme color variables
+$theme-color: #dfeef2;
+$theme-complementary: #f2e3df;
+$theme-darker: darken($theme-color, 30%);
+$theme-lighter: lighten($theme-color, 5%);
 
+// Common centering classes
 .center {
 	display: flex;
 	align-items: center;
