@@ -1,3 +1,9 @@
 #showcase {
 	width: 90% !important;
 }
+
+@media only screen and (min-width: 600px) {
+	#showcase {
+		width: 60% !important;
+	}
+}
