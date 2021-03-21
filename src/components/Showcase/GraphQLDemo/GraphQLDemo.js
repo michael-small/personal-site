@@ -69,10 +69,7 @@ export default function GraphQLDemo(props) {
 	return (
 		<Aux>
 			<h2>{dataDEMO.demoCode.title}</h2>
-			<h3 className='aligned-with-icon'>
-				{dataCMS.graphQLDemo.h2}{' '}
-				{/* {props.showCode && <CodeIcon id='code-toggle' />} */}
-			</h3>
+			<h3 className='aligned-with-icon'>{dataCMS.graphQLDemo.h2} </h3>
 			<p>{dataCMS.graphQLDemo.p1}</p>
 
 			<TitledImage
@@ -110,20 +107,19 @@ export default function GraphQLDemo(props) {
 			/>
 
 			{props.showCode && (
-				<TitledImage
-					titleH3='Component hierarchy)'
-					imgURL={dataDEMO.demoCode.compImg.url}
-					alt={'Hierarchy of this page and GraphQL demo'}
-				/>
-			)}
-
-			{props.showCode && (
-				<CodeDialog
-					codeTitle={dataDEMO.demoCode.title}
-					fileName={dataDEMO.demoCode.fileName}
-					ghLink={dataDEMO.demoCode.gitHubLink}
-					multiline={dataDEMO.demoCode.multiline}
-				/>
+				<Aux>
+					<TitledImage
+						titleH3='Component hierarchy)'
+						imgURL={dataDEMO.demoCode.compImg.url}
+						alt={'Hierarchy of this page and GraphQL demo'}
+					/>
+					<CodeDialog
+						codeTitle={dataDEMO.demoCode.title}
+						fileName={dataDEMO.demoCode.fileName}
+						ghLink={dataDEMO.demoCode.gitHubLink}
+						multiline={dataDEMO.demoCode.multiline}
+					/>
+				</Aux>
 			)}
 		</Aux>
 	);
