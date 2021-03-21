@@ -69,7 +69,7 @@ export default function GraphQLDemo(props) {
 	return (
 		<Aux>
 			<h2>{dataDEMO.demoCode.title}</h2>
-			<h3 className='aligned-with-icon'>{dataCMS.graphQLDemo.h2} </h3>
+			<h3>{dataCMS.graphQLDemo.h2} </h3>
 			<p>{dataCMS.graphQLDemo.p1}</p>
 
 			<TitledImage
@@ -109,7 +109,7 @@ export default function GraphQLDemo(props) {
 			{props.showCode && (
 				<Aux>
 					<TitledImage
-						titleH3='Component hierarchy)'
+						titleH3='Component hierarchy'
 						imgURL={dataDEMO.demoCode.compImg.url}
 						alt={'Hierarchy of this page and GraphQL demo'}
 					/>
