@@ -2,6 +2,7 @@ import React from 'react';
 
 // <----- Components ----->
 import Aux from '../../hocs/Aux';
+import TitledImage from '../../UI/TitledImage/TitledImage';
 
 // <----- MUI ----->
 import CodeDialog from '../CodeDialog/CodeDialog';
@@ -31,15 +32,18 @@ const GET_DEMO_UNITS_CODE = gql`
 			gitHubLink
 			multiline
 			compImg {
-				fileName
 				url
 			}
 			devView {
-				fileName
 				url
 			}
 			editorView {
-				fileName
+				url
+			}
+			demoWysiwyg {
+				url
+			}
+			demoTextSchemaRichText {
 				url
 			}
 		}
@@ -65,47 +69,57 @@ export default function GraphQLDemo(props) {
 	return (
 		<Aux>
 			<h2>{dataDEMO.demoCode.title}</h2>
-			<h3 className='aligned-with-icon'>
-				{dataCMS.graphQLDemo.h2}{' '}
-				{/* {props.showCode && <CodeIcon id='code-toggle' />} */}
-			</h3>
+			<h3>{dataCMS.graphQLDemo.h2} </h3>
 			<p>{dataCMS.graphQLDemo.p1}</p>
+
+			<TitledImage
+				titleH3='The very text above and below this'
+				imgURL={dataDEMO.demoCode.demoTextSchemaRichText.url}
+				alt={'The very place where I place the main text of the page'}
+			/>
+			<TitledImage
+				titleH3='Formatting like email/Word'
+				imgURL={dataDEMO.demoCode.demoWysiwyg.url}
+				alt={
+					'An example of the more complex things that GraphCMS can do'
+				}
+			/>
+
 			{props.showCode === false ? (
 				<p>{dataCMS.graphQLDemo.pRecruiter}</p>
 			) : (
 				<p>{dataCMS.graphQLDemo.pDeveloper}</p>
 			)}
 
-			<h3 className='center'>No code view (Editor)</h3>
-			<img
-				src={dataDEMO.demoCode.editorView.url}
-				alt='View that GraphCMS users without code experience (editors) see'
-				className='center-img cms-view'
+			<TitledImage
+				titleH3='No code view (Editor)'
+				imgURL={dataDEMO.demoCode.editorView.url}
+				alt={
+					'View that GraphCMS users without code experience (editors) see'
+				}
 			/>
-			<h3 className='center'>Code View (Developer)</h3>
-			<img
-				src={dataDEMO.demoCode.devView.url}
-				alt='View that GraphCMS users with code experience (developers) see'
-				className='center-img cms-view'
+			<TitledImage
+				titleH3='Code View (Developer)'
+				imgURL={dataDEMO.demoCode.devView.url}
+				alt={
+					'View that GraphCMS users with code experience (developers) see'
+				}
 			/>
+
 			{props.showCode && (
 				<Aux>
-					{' '}
-					<h2>Component hierarchy</h2>
-					<img
-						src={dataDEMO.demoCode.compImg.url}
-						alt='Hierarchy of this page and GraphQL demo'
-						className='center-img'
+					<TitledImage
+						titleH3='Component hierarchy'
+						imgURL={dataDEMO.demoCode.compImg.url}
+						alt={'Hierarchy of this page and GraphQL demo'}
+					/>
+					<CodeDialog
+						codeTitle={dataDEMO.demoCode.title}
+						fileName={dataDEMO.demoCode.fileName}
+						ghLink={dataDEMO.demoCode.gitHubLink}
+						multiline={dataDEMO.demoCode.multiline}
 					/>
 				</Aux>
-			)}
-			{props.showCode && (
-				<CodeDialog
-					codeTitle={dataDEMO.demoCode.title}
-					fileName={dataDEMO.demoCode.fileName}
-					ghLink={dataDEMO.demoCode.gitHubLink}
-					multiline={dataDEMO.demoCode.multiline}
-				/>
 			)}
 		</Aux>
 	);
