@@ -5,6 +5,7 @@ import Aux from '../hocs/Aux';
 
 // <----- Styling ----->
 import './Showcase.scss';
+import '../UI/_theme.scss';
 import ViewPreview from './ViewPreview/ViewPreview';
 
 export default class Showcase extends Component {
@@ -26,7 +27,7 @@ export default class Showcase extends Component {
 
 	render() {
 		return (
-			<Aux>
+			<div id='showcase' className='center-block'>
 				<h1>Showcase</h1>
 				<h3>Developer and Friends/Family Section coming soon</h3>
 				<ViewPreview
@@ -47,7 +48,7 @@ export default class Showcase extends Component {
 					codeBackgroundReq='No coding background required.'
 					link='/Showcase'
 				/>
-			</Aux>
+			</div>
 		);
 	}
 }
