@@ -31,15 +31,18 @@ const GET_DEMO_UNITS_CODE = gql`
 			gitHubLink
 			multiline
 			compImg {
-				fileName
 				url
 			}
 			devView {
-				fileName
 				url
 			}
 			editorView {
-				fileName
+				url
+			}
+			demoWysiwyg {
+				url
+			}
+			demoTextSchemaRichText {
 				url
 			}
 		}
@@ -70,6 +73,20 @@ export default function GraphQLDemo(props) {
 				{/* {props.showCode && <CodeIcon id='code-toggle' />} */}
 			</h3>
 			<p>{dataCMS.graphQLDemo.p1}</p>
+
+			<h3 className='center'>The very text above and below this</h3>
+			<img
+				src={dataDEMO.demoCode.demoTextSchemaRichText.url}
+				alt='The very place where I place the main text of the page'
+				className='center-img cms-view'
+			/>
+			<h3 className='center'>Formatting like email/Word</h3>
+			<img
+				src={dataDEMO.demoCode.demoWysiwyg.url}
+				alt='An example of the more complex things that GraphCMS can do'
+				className='center-img cms-view'
+			/>
+
 			{props.showCode === false ? (
 				<p>{dataCMS.graphQLDemo.pRecruiter}</p>
 			) : (
