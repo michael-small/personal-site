@@ -47,7 +47,6 @@ export default class Showcase extends Component {
 					codeBackgroundReq='No coding background required.'
 					link='/Showcase'
 				/>
-				{/* <GraphQLDemo showCode={this.state.showCode} /> */}
 			</Aux>
 		);
 	}
