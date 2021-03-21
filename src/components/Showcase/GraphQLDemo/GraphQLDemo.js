@@ -110,16 +110,13 @@ export default function GraphQLDemo(props) {
 			/>
 
 			{props.showCode && (
-				<Aux>
-					{' '}
-					<h2>Component hierarchy</h2>
-					<img
-						src={dataDEMO.demoCode.compImg.url}
-						alt='Hierarchy of this page and GraphQL demo'
-						className='center-img'
-					/>
-				</Aux>
+				<TitledImage
+					titleH3='Component hierarchy)'
+					imgURL={dataDEMO.demoCode.compImg.url}
+					alt={'Hierarchy of this page and GraphQL demo'}
+				/>
 			)}
+
 			{props.showCode && (
 				<CodeDialog
 					codeTitle={dataDEMO.demoCode.title}
