@@ -8,3 +8,13 @@
 	width: 500px;
 	padding-bottom: 1rem;
 }
+
+#graph-ql-demo {
+	width: 90% !important;
+}
+
+@media only screen and (min-width: 600px) {
+	#graph-ql-demo {
+		width: 60% !important;
+	}
+}
