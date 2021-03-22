@@ -1,6 +1,8 @@
 import React from 'react';
 import Aux from '../../hocs/Aux';
 
+import '../_theme.scss';
+
 export default function TitledImage(props) {
 	return (
 		<Aux>
@@ -8,7 +10,7 @@ export default function TitledImage(props) {
 			<img
 				src={props.imgURL}
 				alt={props.alt}
-				className='center-img cms-view'
+				className='center-block cms-view'
 			/>
 		</Aux>
 	);
