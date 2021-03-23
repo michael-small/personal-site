@@ -26,7 +26,11 @@ export default function Contact(props) {
 				<h3>
 					GitHub <GitHubIcon />
 				</h3>
-				<a href='https://github.com/michael-small'>
+				<a
+					href='https://github.com/michael-small'
+					target='_blank'
+					rel='noreferrer'
+				>
 					github.com/michael-small
 				</a>
 			</section>
