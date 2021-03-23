@@ -9,18 +9,24 @@ export default function Contact(props) {
 	return (
 		<div>
 			<h1>Contact Information</h1>
-			<section>
-				<h3 className='centered-text'>
+			<section className='centered-text'>
+				<h3>
 					LinkedIn <LinkedInIcon />
 				</h3>
+				<a href='https://www.linkedin.com/in/michael-small-4ab0b315b/'>
+					linkedin.com/michael-small (not the full link, please click)
+				</a>
 			</section>
-			<section>
-				<h3 className='centered-text'>
+			<section className='centered-text'>
+				<h3>
 					GitHub <GitHubIcon />
 				</h3>
+				<a href='https://github.com/michael-small'>
+					github.com/michael-small
+				</a>
 			</section>
-			<section>
-				<h3 className='centered-text'>
+			<section className='centered-text'>
+				<h3>
 					Email <EmailIcon />
 				</h3>
 				<Obfuscate email='small203@morris.umn.edu' />
