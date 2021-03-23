@@ -13,9 +13,14 @@ export default function Contact(props) {
 				<h3>
 					LinkedIn <LinkedInIcon />
 				</h3>
-				<a href='https://www.linkedin.com/in/michael-small-4ab0b315b/'>
-					linkedin.com/michael-small (not the full link, please click)
+				<a
+					href='https://www.linkedin.com/in/michael-small-4ab0b315b/'
+					target='_blank'
+					rel='noreferrer'
+				>
+					linkedin.com/michael-small
 				</a>
+				<p>(not the full link, please click)</p>
 			</section>
 			<section className='centered-text'>
 				<h3>
