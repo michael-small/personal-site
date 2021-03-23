@@ -2,7 +2,7 @@ import React from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-
+import Obfuscate from 'react-obfuscate';
 import '../UI/_theme.scss';
 
 export default function Contact(props) {
@@ -23,6 +23,7 @@ export default function Contact(props) {
 				<h3 className='centered-text'>
 					Email <EmailIcon />
 				</h3>
+				<Obfuscate email='small203@morris.umn.edu' />
 			</section>
 		</div>
 	);
