@@ -9,6 +9,7 @@ import CodeDialog from '../CodeDialog/CodeDialog';
 
 // <----- Styling ----->
 import './GraphQLDemo.scss';
+import '../../UI/_theme.scss';
 
 // <----- GQL/Apollo ----->
 import { gql, useQuery } from '@apollo/client';
@@ -67,7 +68,7 @@ export default function GraphQLDemo(props) {
 		return `Error! ${errorCMS.message || errorDEMO.message}`;
 
 	return (
-		<Aux>
+		<div id='graph-ql-demo' className='center-block'>
 			<h2>{dataDEMO.demoCode.title}</h2>
 			<h3>{dataCMS.graphQLDemo.h2} </h3>
 			<p>{dataCMS.graphQLDemo.p1}</p>
@@ -121,6 +122,6 @@ export default function GraphQLDemo(props) {
 					/>
 				</Aux>
 			)}
-		</Aux>
+		</div>
 	);
 }
