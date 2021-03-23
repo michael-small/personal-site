@@ -18,6 +18,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 // ----conditional icons----
 import HomeIcon from '@material-ui/icons/Home';
 import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
 import HelpIcon from '@material-ui/icons/Help';
 // ----misc icons----
 import MenuIcon from '@material-ui/icons/Menu';
@@ -63,6 +64,7 @@ export default function TemporaryDrawer() {
 	const navLinks = [
 		{ page: 'About Me', path: '/' },
 		{ page: 'Showcase', path: '/showcase' },
+		{ page: 'Contact', path: '/contact' },
 	];
 
 	const list = (anchor) => (
@@ -83,6 +85,8 @@ export default function TemporaryDrawer() {
 									<HomeIcon />
 								) : link.page === 'Showcase' ? (
 									<ImportantDevicesIcon />
+								) : link.page === 'Contact' ? (
+									<ContactMailIcon />
 								) : (
 									<HelpIcon />
 								)}
