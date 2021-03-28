@@ -13,12 +13,15 @@ import HireMe from './HomeSubsections/HireMe/HireMe';
 import Languages from './HomeSubsections/Languages/Languages';
 import Reviews from './HomeSubsections/Reviews/Reviews';
 import SnackbarFab from '../UI/SnackbarFab/SnackbarFab';
+import Contact from '../Contact/Contact';
 
 export default class Home extends Component {
 	render() {
 		return (
 			<Box>
 				<Bio />
+
+				<Contact />
 
 				<Divider />
 

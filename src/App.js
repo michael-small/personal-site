@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Showcase from './components/Showcase/Showcase';
 import RecruiterView from './components/Showcase/RecruiterView/RecruiterView';
 import Navigation from './components/Navigation/Navigation';
+import Contact from './components/Contact/Contact';
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 					path='/showcase/recruiter'
 					component={RecruiterView}
 				/>
+				<Route exact path='/contact' component={Contact} />
 			</BrowserRouter>
 		</div>
 	);
