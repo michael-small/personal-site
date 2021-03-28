@@ -4,11 +4,12 @@ import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Obfuscate from 'react-obfuscate';
 import '../UI/_theme.scss';
+import './Contact.scss';
 
 export default function Contact(props) {
 	return (
-		<div>
-			<h1>Contact Information</h1>
+		<section id='contact-body'>
+			<h2>Contact Information</h2>
 			<section className='centered-text'>
 				<h3>
 					LinkedIn <LinkedInIcon />
@@ -18,9 +19,8 @@ export default function Contact(props) {
 					target='_blank'
 					rel='noreferrer'
 				>
-					linkedin.com/michael-small
+					linkedin.com/michael-small-dev
 				</a>
-				<p>(not the full link, please click)</p>
 			</section>
 			<section className='centered-text'>
 				<h3>
@@ -40,6 +40,6 @@ export default function Contact(props) {
 				</h3>
 				<Obfuscate email='small203@morris.umn.edu' />
 			</section>
-		</div>
+		</section>
 	);
 }
