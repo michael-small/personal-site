@@ -47,7 +47,7 @@ export default function () {
 				<p>
 					For the rapid pricing and selling of a large collection of
 					antiques. No-code interface for editors to add and update
-					antiques.{' '}
+					antiques. Very much a work in progress.{' '}
 				</p>
 			</div>
 			<div id='witty'>
