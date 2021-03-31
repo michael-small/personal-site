@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Projects() {
 	const classes = useStyles();
 	return (
-		<Aux>
+		<div id='project-body'>
 			<Typography variant='h1' className={theme.center}>
 				Projects
 			</Typography>
@@ -56,7 +56,14 @@ export default function Projects() {
 					<Typography variant='body1'>
 						For the rapid pricing and selling of a large collection
 						of antiques. No-code interface for editors to add and
-						update antiques. Very much a work in progress.{' '}
+						update antiques.
+						<br />
+						Beta version helped make a few hundred dollars last year
+						during garage sale season.
+						<br />
+						Will be used more this year, and will eventually support
+						customers viewing and buying items. Very much a work in
+						progress.
 					</Typography>
 					<div className={classes.root}>
 						<Button
@@ -79,7 +86,28 @@ export default function Projects() {
 						</Button>
 					</div>
 				</div>
+				<div>
+					<Typography variant='h2'>Coming Soon</Typography>
+					<Typography variant='body1'>
+						I have various projects that I need to host. Internship
+						projects, personal projects, and more.
+					</Typography>
+					<ul>
+						<li>Augmented Reality Learning Game Internship</li>
+						<li>Undergraduate Research Symposium Internship</li>
+						<li>Witty: Video Learning Platform</li>
+						<li>
+							Strength-Star: Demo for friend's strength training
+							webapp
+						</li>
+						<li>CSCi 3601: Software Design</li>
+						<li>XKCD Finder</li>
+						<li>
+							Factory Worker Scheduling and Line Status Service
+						</li>
+					</ul>
+				</div>
 			</div>
-		</Aux>
+		</div>
 	);
 }

@@ -44,11 +44,18 @@ export default function () {
 						<pre>Code </pre> <GitHubIcon />
 					</Button>
 				</div>
-				<p>
+				<Typography variant='body1'>
 					For the rapid pricing and selling of a large collection of
 					antiques. No-code interface for editors to add and update
-					antiques. Very much a work in progress.{' '}
-				</p>
+					antiques.
+					<br />
+					Beta version helped make a few hundred dollars last year
+					during garage sale season.
+					<br />
+					Will be used more this year, and will eventually support
+					customers viewing and buying items. Very much a work in
+					progress.
+				</Typography>
 			</div>
 			<div id='eds-garage-sale'>
 				<Typography variant='h5' gutterBottom>
@@ -65,11 +72,11 @@ export default function () {
 						<pre>Live Site </pre> <WebIcon />
 					</Button>
 				</div>
-				<p>
+				<Typography variant='body1'>
 					A blog and produce showcase for the Garlicky Bohemian Farm,
 					a hobby farm that produces thousands of garlic bulbs per
 					season.
-				</p>
+				</Typography>
 			</div>
 		</section>
 	);
