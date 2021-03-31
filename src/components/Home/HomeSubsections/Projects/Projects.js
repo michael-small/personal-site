@@ -32,7 +32,7 @@ export default function () {
 						href='https://eds-garage-sale.herokuapp.com/'
 						target='_blank'
 					>
-						<pre>Live Demo </pre> <WebIcon />
+						<pre>Live Site </pre> <WebIcon />
 					</Button>
 					<Button
 						variant='contained'
@@ -50,7 +50,7 @@ export default function () {
 					antiques. Very much a work in progress.{' '}
 				</p>
 			</div>
-			<div id='witty'>
+			<div id='eds-garage-sale'>
 				<Typography variant='h5' gutterBottom>
 					🧺 Garlicky Bohemian Farm 🚜
 				</Typography>
@@ -62,7 +62,7 @@ export default function () {
 						href='https://garlickybohemianfarm.com/en'
 						target='_blank'
 					>
-						<pre>Live Demo </pre> <WebIcon />
+						<pre>Live Site </pre> <WebIcon />
 					</Button>
 				</div>
 				<p>

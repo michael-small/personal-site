@@ -7,6 +7,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import WebIcon from '@material-ui/icons/Web';
 
 import { makeStyles } from '@material-ui/core/styles';
+import './Projects.scss';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -24,7 +25,7 @@ export default function Projects() {
 				Projects
 			</Typography>
 			{/* TODO: Import from home/projects */}
-			<div>
+			<div className='project'>
 				<div id='witty'>
 					<Typography variant='h3' gutterBottom>
 						🧺 Garlicky Bohemian Farm 🚜
@@ -42,39 +43,41 @@ export default function Projects() {
 							href='https://garlickybohemianfarm.com/en'
 							target='_blank'
 						>
-							<pre>Live Demo </pre> <WebIcon />
+							<pre>LiveSite </pre> <WebIcon />
 						</Button>
 					</div>
 				</div>
 			</div>
-			<div>
-				<Typography variant='h3' gutterBottom>
-					🏠 Ed's Garage Sale 🛍️
-				</Typography>
-				<Typography variant='body1'>
-					For the rapid pricing and selling of a large collection of
-					antiques. No-code interface for editors to add and update
-					antiques. Very much a work in progress.{' '}
-				</Typography>
-				<div className={classes.root}>
-					<Button
-						variant='contained'
-						color='primary'
-						size='small'
-						href='https://eds-garage-sale.herokuapp.com/'
-						target='_blank'
-					>
-						<pre>Live Demo </pre> <WebIcon />
-					</Button>
-					<Button
-						variant='contained'
-						color='primary'
-						size='small'
-						href='https://github.com/michael-small/Eds-Garage-Sale'
-						target='_blank'
-					>
-						<pre>Code </pre> <GitHubIcon />
-					</Button>
+			<div className='project'>
+				<div id='eds-garage-sale'>
+					<Typography variant='h3' gutterBottom>
+						🏠 Ed's Garage Sale 🛍️
+					</Typography>
+					<Typography variant='body1'>
+						For the rapid pricing and selling of a large collection
+						of antiques. No-code interface for editors to add and
+						update antiques. Very much a work in progress.{' '}
+					</Typography>
+					<div className={classes.root}>
+						<Button
+							variant='contained'
+							color='primary'
+							size='small'
+							href='https://eds-garage-sale.herokuapp.com/'
+							target='_blank'
+						>
+							<pre>Live Site </pre> <WebIcon />
+						</Button>
+						<Button
+							variant='contained'
+							color='primary'
+							size='small'
+							href='https://github.com/michael-small/Eds-Garage-Sale'
+							target='_blank'
+						>
+							<pre>Code </pre> <GitHubIcon />
+						</Button>
+					</div>
 				</div>
 			</div>
 		</Aux>
