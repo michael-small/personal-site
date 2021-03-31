@@ -20,6 +20,17 @@ export default function () {
 	return (
 		<section id='projects'>
 			<h2>Projects 🚧</h2>
+			<div style={{ textAlign: 'center' }}>
+				<Button
+					variant='contained'
+					color='primary'
+					size='large'
+					href='/projects'
+					id='showcase-link'
+				>
+					See More Projects
+				</Button>
+			</div>
 			<div id='eds-garage-sale'>
 				<Typography variant='h5' gutterBottom>
 					🏠 Ed's Garage Sale 🛍️
