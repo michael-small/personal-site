@@ -54,7 +54,7 @@ export default function () {
 				<Typography variant='h5' gutterBottom>
 					🧺 Garlicky Bohemian Farm 🚜
 				</Typography>
-				<div>
+				<div className={classes.root}>
 					<Button
 						variant='contained'
 						color='primary'

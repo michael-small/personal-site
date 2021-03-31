@@ -35,7 +35,7 @@ export default function Projects() {
 						Farm, a hobby farm that produces thousands of garlic
 						bulbs per season.
 					</Typography>
-					<div>
+					<div className={classes.root}>
 						<Button
 							variant='contained'
 							color='primary'
