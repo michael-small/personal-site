@@ -20,6 +20,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import HelpIcon from '@material-ui/icons/Help';
+import AssignmentIcon from '@material-ui/icons/Assignment';
 // ----misc icons----
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -65,6 +66,7 @@ export default function TemporaryDrawer() {
 		{ page: 'About Me', path: '/' },
 		{ page: 'Showcase', path: '/showcase' },
 		{ page: 'Contact', path: '/contact' },
+		{ page: 'Projects', path: '/projects' },
 	];
 
 	const list = (anchor) => (
@@ -83,6 +85,8 @@ export default function TemporaryDrawer() {
 							<ListItemIcon>
 								{link.page === 'About Me' ? (
 									<HomeIcon />
+								) : link.page === 'Projects' ? (
+									<AssignmentIcon />
 								) : link.page === 'Showcase' ? (
 									<ImportantDevicesIcon />
 								) : link.page === 'Contact' ? (

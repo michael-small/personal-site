@@ -27,7 +27,7 @@ export default class Bio extends Component {
 					tailored to recruiters and developers.
 				</h3>
 				<Button
-					variant='outlined'
+					variant='contained'
 					color='primary'
 					size='large'
 					href='/showcase'
