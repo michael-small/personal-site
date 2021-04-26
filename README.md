@@ -9,3 +9,13 @@ You can also view accompanying documentation in its own folder in the root.
 ### How to Run
 
 `npm start`
+
+### Stack
+
+* Frontend: Create-React-App
+* Backend: GraphCMS (GraphQL CMS) queried via Apollo Client
+* Styling: MaterialUI & SCSS
+
+### Documentation
+
+See `~/Documentation` for things like my personal notes on things like React, or CSS conventions I use.
