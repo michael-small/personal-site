@@ -5,6 +5,7 @@ import Showcase from './components/Showcase/Showcase';
 import RecruiterView from './components/Showcase/RecruiterView/RecruiterView';
 import Navigation from './components/Navigation/Navigation';
 import Contact from './components/Contact/Contact';
+import Projects from './components/Projects/Projects';
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 					component={RecruiterView}
 				/>
 				<Route exact path='/contact' component={Contact} />
+				<Route exact path='/projects' component={Projects} />
 			</BrowserRouter>
 		</div>
 	);
