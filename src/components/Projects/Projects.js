@@ -41,7 +41,6 @@ export default function Projects() {
 						Strength-Star: Demo for friend's strength training
 						webapp
 					</li>
-					<li>CSCi 3601: Software Design</li>
 					<li>XKCD Finder</li>
 					<li>Factory Worker Scheduling and Line Status Service</li>
 				</ul>
