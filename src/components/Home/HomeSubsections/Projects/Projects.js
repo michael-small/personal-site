@@ -11,7 +11,7 @@ const GET_PROJECTS = gql`
 	}
 `;
 
-export default function () {
+export default function Projects() {
 	const { loading, error, data } = useQuery(GET_PROJECTS);
 
 	if (loading) return 'Loading...';
