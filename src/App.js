@@ -6,6 +6,7 @@ import RecruiterView from './components/Showcase/RecruiterView/RecruiterView';
 import Navigation from './components/Navigation/Navigation';
 import Contact from './components/Contact/Contact';
 import Projects from './components/Projects/Projects';
+import CompWorkshop from './components/utils/CompWorkshop';
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 				/>
 				<Route exact path='/contact' component={Contact} />
 				<Route exact path='/projects' component={Projects} />
+				<Route path='/componentWorkshop' component={CompWorkshop} />
 			</BrowserRouter>
 		</div>
 	);
