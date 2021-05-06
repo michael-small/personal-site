@@ -1,7 +1,14 @@
+import { Button, TextField } from '@material-ui/core';
 import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import FileCopyIcon from '@material-ui/icons/FileCopy';
 
-export default function CopyToClipB() {
+// Todo: Move to different component space so it can be wrapped properly
+function CopyableItem() {
+	return <p>Hello</p>;
+}
+
+export default function CopyToClipB(props) {
 	const [clipboardText, setClipboardText] = useState('');
 	const [copied, setCopied] = useState(false);
 
@@ -9,19 +16,27 @@ export default function CopyToClipB() {
 		<div>
 			<h1>Copy to clipboard</h1>
 
-			<input
+			{/* <TextField
+				variant='filled'
+				id='copy-to-clipboard'
+				label='Copy to clipboard'
 				value={clipboardText}
 				onChange={(event) => setClipboardText(event.target.value)}
-			/>
+			/> */}
 
 			<CopyToClipboard
 				text={clipboardText}
 				onCopy={() => setCopied(true)}
 			>
-				<button>Copy to clipboard with span </button>
+				<Button
+					variant='outlined'
+					// onClick={setClipboardText(props.children)}
+				>
+					<CopyableItem /> <FileCopyIcon />
+				</Button>
 			</CopyToClipboard>
-			<span>{clipboardText} </span>
-			<span>{copied.toString()}</span>
+			<p>Copied text: {clipboardText} </p>
+			<p>Copied: {copied.toString()}</p>
 		</div>
 	);
 }
