@@ -6,7 +6,7 @@ export default function CompWorkshop() {
 		<div>
 			<h1>Component Workshop</h1>
 			<div>
-				<CopyToClipB />
+				<CopyToClipB text={'test'} />
 			</div>
 		</div>
 	);
