@@ -1,6 +1,7 @@
 import React from 'react';
 import CopyToClipB from '../UI/CopyToClipB/CopyToClipB';
 import { gql, useQuery } from '@apollo/client';
+import SkillsFilter from '../CV/SkillsFilter/SkillsFilter';
 
 const GET_SKILLS = gql`
 	query GET_SKILLS {
@@ -17,14 +18,24 @@ export default function CompWorkshop() {
 	if (loading) return 'Loading...';
 	if (error) return `Error! ${error.message}`;
 
+	const skillCategories = [
+		{ categoryId: 'Language', readAs: 'Languages' },
+		{ categoryId: 'Framework', readAs: 'Frameworks' },
+		{ categoryId: 'Database', readAs: 'Databases' },
+		{ categoryId: 'Concepts', readAs: 'Concepts' },
+		{ categoryId: 'ExposedTo', readAs: 'Exposed To' },
+	];
+
 	return (
 		<div>
 			<h1>Component Workshop</h1>
-			<div>
-				{data.skills.map((skill, index) => (
-					<CopyToClipB text={skill.skill} key={index} />
-				))}
-			</div>
+			{skillCategories.map((category, index) => (
+				<SkillsFilter
+					skills={data.skills}
+					typeId={category.categoryId}
+					typeReadAs={category.readAs}
+				/>
+			))}
 		</div>
 	);
 }
