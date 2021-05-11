@@ -47,6 +47,7 @@ export default function CompWorkshop() {
 					skills={data.skills}
 					typeId={category.categoryId}
 					typeReadAs={category.readAs}
+					key={index}
 				/>
 			))}
 		</div>
