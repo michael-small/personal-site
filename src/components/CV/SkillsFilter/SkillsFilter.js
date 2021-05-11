@@ -7,6 +7,12 @@ const useStyles = makeStyles({
 	SkillType: {
 		padding: '4px',
 	},
+	Body: {
+		marginLeft: 'auto',
+		marginRight: 'auto',
+		display: 'block',
+		width: '50%',
+	},
 });
 
 export default function SkillsFilter(props) {
@@ -16,7 +22,7 @@ export default function SkillsFilter(props) {
 	);
 
 	return (
-		<div>
+		<div className={classes.Body}>
 			<h1>{props.typeReadAs}</h1>
 			<Paper className={classes.SkillType}>
 				{filteredSkill.map((skill, index) => (

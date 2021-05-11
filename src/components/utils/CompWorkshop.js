@@ -2,6 +2,13 @@ import React from 'react';
 import CopyToClipB from '../UI/CopyToClipB/CopyToClipB';
 import { gql, useQuery } from '@apollo/client';
 import SkillsFilter from '../CV/SkillsFilter/SkillsFilter';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+	WorkshopDesc: {
+		textAlign: 'center',
+	},
+});
 
 const GET_SKILLS = gql`
 	query GET_SKILLS {
@@ -13,6 +20,8 @@ const GET_SKILLS = gql`
 `;
 
 export default function CompWorkshop() {
+	const classes = useStyles();
+
 	const { loading, error, data } = useQuery(GET_SKILLS);
 
 	if (loading) return 'Loading...';
@@ -29,6 +38,9 @@ export default function CompWorkshop() {
 	return (
 		<div>
 			<h1>Component Workshop</h1>
+			<h3 className={classes.WorkshopDesc}>
+				Where upcoming website features are demo'd
+			</h3>
 			{skillCategories.map((category, index) => (
 				<SkillsFilter
 					skills={data.skills}
