@@ -39,7 +39,8 @@ export default function CompWorkshop() {
 		<div>
 			<h1>Component Workshop</h1>
 			<h3 className={classes.WorkshopDesc}>
-				Where upcoming website features are demo'd
+				Where upcoming website features are demo'd. Features on this
+				page can be and probably are buggy.
 			</h3>
 			{skillCategories.map((category, index) => (
 				<SkillsFilter
