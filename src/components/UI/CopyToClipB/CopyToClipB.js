@@ -3,8 +3,17 @@ import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import FileCopyIcon from '@material-ui/icons/FileCopy';
 import Snackbar from '@material-ui/core/Snackbar';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+	element: {
+		marginBottom: '4px',
+	},
+});
 
 export default function CopyToClipB(props) {
+	const classes = useStyles();
+
 	const [clipboardText, setClipboardText] = useState(props.text);
 	const [copied, setCopied] = useState(false);
 
@@ -23,16 +32,16 @@ export default function CopyToClipB(props) {
 	};
 
 	return (
-		<div>
-			<h1>Copy to clipboard</h1>
-
+		<div className={classes.element}>
 			<CopyToClipboard
 				text={clipboardText}
 				onCopy={() => setCopied(true)}
 			>
-				<Button variant='outlined' onClick={handleClick}>
-					{clipboardText} <FileCopyIcon />
-				</Button>
+				<span>
+					<Button variant='outlined' onClick={handleClick}>
+						{clipboardText} <FileCopyIcon />
+					</Button>
+				</span>
 			</CopyToClipboard>
 			<Snackbar
 				anchorOrigin={{
