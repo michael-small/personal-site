@@ -25,9 +25,9 @@ export default function SkillsFilter(props) {
 		<div className={classes.Body}>
 			<h1>{props.typeReadAs}</h1>
 			<Paper className={classes.SkillType}>
-				{filteredSkill.map((skill, index) => (
+				{/* {filteredSkill.map((skill, index) => (
 					<CopyToClipB key={index} text={skill.skill} />
-				))}
+				))} */}
 			</Paper>
 		</div>
 	);
