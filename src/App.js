@@ -6,7 +6,7 @@ import RecruiterView from './components/Showcase/RecruiterView/RecruiterView';
 import Navigation from './components/Navigation/Navigation';
 import Contact from './components/Contact/Contact';
 import Projects from './components/Projects/Projects';
-import CompWorkshop from './components/utils/CompWorkshop';
+import CompWorkshop from './components/UI/CompWorkshop/CompWorkshop';
 
 function App() {
 	return (

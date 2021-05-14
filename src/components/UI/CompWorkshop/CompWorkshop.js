@@ -1,7 +1,7 @@
 import React from 'react';
-import CopyToClipB from '../UI/CopyToClipB/CopyToClipB';
+import CopyToClipB from '../CopyToClipB/CopyToClipB';
 import { gql, useQuery } from '@apollo/client';
-import SkillsFilter from '../CV/SkillsFilter/SkillsFilter';
+import SkillsFilter from '../../CV/SkillsFilter/SkillsFilter';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
