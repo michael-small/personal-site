@@ -42,14 +42,14 @@ export default function CompWorkshop() {
 				Where upcoming website features are demo'd. Features on this
 				page can be and probably are buggy.
 			</h3>
-			{skillCategories.map((category, index) => (
+			{/* {skillCategories.map((category, index) => (
 				<SkillsFilter
 					skills={data.skills}
 					typeId={category.categoryId}
 					typeReadAs={category.readAs}
 					key={index}
 				/>
-			))}
+			))} */}
 		</div>
 	);
 }
