@@ -2,7 +2,7 @@ import './App.scss';
 import Home from './components/Home/Home';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Showcase from './components/Showcase/Showcase';
-import RecruiterView from './components/Showcase/RecruiterView/RecruiterView';
+import RecruiterView from './components/Showcase/RoleViews/RecruiterView/RecruiterView';
 import Navigation from './components/Navigation/Navigation';
 import Contact from './components/Contact/Contact';
 import Projects from './components/Projects/Projects';
