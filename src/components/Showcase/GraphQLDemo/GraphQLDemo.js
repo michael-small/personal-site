@@ -5,7 +5,7 @@ import Aux from '../../hocs/Aux';
 import TitledImage from '../../UI/TitledImage/TitledImage';
 
 // <----- MUI ----->
-import CodeDialog from '../CodeDialog/CodeDialog';
+import CodeDialog from '../../UI/CodeDialog/CodeDialog';
 
 // <----- Styling ----->
 import './GraphQLDemo.scss';
