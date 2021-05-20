@@ -16,6 +16,12 @@ You can also view accompanying documentation in its own folder in the root.
 * Backend: GraphCMS (GraphQL CMS) queried via Apollo Client
 * Styling: MaterialUI & SCSS
 
+### Deployment
+
+Production: https://michael-small-portfolio.herokuapp.com/
+
+Staging `dev` branch or other WIP branches until stable: https://msmall-portfolio-deploy-test.herokuapp.com/
+
 ### Documentation
 
 See `~/Documentation` for things like my personal notes on things like React, or CSS conventions I use.
