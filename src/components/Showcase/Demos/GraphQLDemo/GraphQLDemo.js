@@ -1,15 +1,15 @@
 import React from 'react';
 
 // <----- Components ----->
-import Aux from '../../hocs/Aux';
-import TitledImage from '../../UI/TitledImage/TitledImage';
+import Aux from '../../../hocs/Aux';
+import TitledImage from '../../../UI/TitledImage/TitledImage';
 
 // <----- MUI ----->
-import CodeDialog from '../CodeDialog/CodeDialog';
+import CodeDialog from '../../../UI/CodeDialog/CodeDialog';
 
 // <----- Styling ----->
 import './GraphQLDemo.scss';
-import '../../UI/_theme.scss';
+import '../../../UI/_theme.scss';
 
 // <----- GQL/Apollo ----->
 import { gql, useQuery } from '@apollo/client';

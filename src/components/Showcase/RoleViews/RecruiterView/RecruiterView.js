@@ -1,7 +1,7 @@
 import React from 'react';
-import Aux from '../../hocs/Aux';
-import GraphQLDemo from '../GraphQLDemo/GraphQLDemo';
-import ToggleCode from '../ToggleCode/ToggleCode';
+import Aux from '../../../hocs/Aux';
+import GraphQLDemo from '../../Demos/GraphQLDemo/GraphQLDemo';
+import ToggleCode from '../../../UI/ToggleCode/ToggleCode';
 import './RecruiterView.scss';
 
 export default function RecruiterView(props) {
